@@ -14,8 +14,8 @@ const Penguin = async ({ app, no = 1 }) => {
   sprite.anchor.set(0.5);
   sprite.x = app.screen.width / 2;
   sprite.y = app.screen.height / 2;
-  sprite.tick = delta => {
-    sprite.rotation += 0.05 * delta;
+  sprite.tick = time => {
+    sprite.rotation += 0.05 * time.deltaTime;
   }
   return sprite;
 }
