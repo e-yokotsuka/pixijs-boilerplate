@@ -5,11 +5,14 @@
 ### Prerequisites
 
 1. Git
-1. Node: any 18 version starting with v18.x.x or greater
-1. Yarn v1: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
-1. A fork of the repo (for any contributions)
+1. Volta
+1. A fork of this repository (required for contributions)
 
 ### Installation
+
+If you haven't installed Volta yet, please visit the [Volta official website](https://docs.volta.sh/guide/) and follow the installation instructions.
+
+ `volta install yarn` (if necessary)
 
  `git clone git@github.com:e-yokotsuka/pixijs-boilerplate.git`
 
@@ -19,19 +22,21 @@
 
 ### Running locally
 
+Start the local server:
+
  `yarn start`
 
- open
+The server will automatically open your browser at:
 
- `http://localhost:8080`
+ `http://localhost:5173`
 
-  (develop environment)
+  (Optional, as the server opens it automatically)
 
-### Build to development
+### Build for development
 
  `yarn debug-build`
 
-### Build to production
+### Build for production
 
  `yarn build`
 

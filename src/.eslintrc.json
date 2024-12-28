@@ -12,6 +12,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "quotes": ["off"],
     "no-unused-vars": [
       "warn",
       {

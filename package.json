@@ -4,7 +4,7 @@
     "node": ">=18.x.x"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "@pixi/sound": "^6.0.1",
@@ -12,29 +12,26 @@
     "stats.js": "^0.17.0"
   },
   "scripts": {
-    "start": "webpack serve --config webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --mode=production --config webpack.config.js",
-    "debug-build": "cross-env NODE_ENV=development webpack --config webpack.config.js"
+    "start": "vite",
+    "dev": "vite",
+    "serve": "vite preview",
+    "build": "cross-env NODE_ENV=production vite build",
+    "debug-build": "cross-env NODE_ENV=development vite build --mode development"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^12.0.2",
+    "@assetpack/core": "^1.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
-    "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^9.17.0",
-    "eslint-webpack-plugin": "^4.2.0",
     "file-loader": "^6.2.0",
-    "html-webpack-harddisk-plugin": "^2.0.0",
-    "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "style-loader": "^4.0.0",
-    "terser-webpack-plugin": "^5.3.11",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.0",
-    "webpack-merge": "^6.0.1"
+    "vite": "^6.0.6",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "volta": {
-    "node": "20.18.0"
+    "node": "20.18.0",
+    "npm": "11.0.0",
+    "yarn": "4.5.3"
   }
 }
